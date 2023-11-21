@@ -1,0 +1,115 @@
+body
+
+
+header {
+    border-bottom: 1.3px solid #E0E0E0;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transform: translate(0px, -16px);
+    
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+
+}
+li::marker{
+   display: inline-block;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+#recherche {
+    border-radius: 25px;
+    border: 1.3px solid #BDBDBD;
+    height: 2.25rem;
+    width: 23rem;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 15%);
+}
+
+
+
+.logo {
+    height: 3rem;
+}
+.parent{
+    width: 100%;
+}
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 70px 35px;
+    margin: 80px;
+}
+
+.logement{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 25px;
+}
+p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.loupe{
+    position: relative;
+}
+
+.icone{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    color:black;
+    height: 35px;
+    width: 35px;
+    
+
+}
+
+
+@media screen and (max-width: 860px)  {
+    #recherche{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    header {
+        border-bottom: 1.3px solid #E0E0E0;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        transform: translate(0px, -16px);
+        
+    }
+
+    .image{
+    display: flex;
+    flex-direction: column;
+    gap: 70px 35px;
+    margin: 80px;
+}
+
+}
